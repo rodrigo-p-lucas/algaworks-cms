@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import * as NavBarWrapper from "./NavBar.styles";
 
 export default function NavBar () {
-  return <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/contato">Contato</Link></li>
-    </ul>
-  </nav>
+  return <>
+    <NavBarWrapper.List>
+      <NavBarWrapper.Item><NavLink to="/">início</NavLink></NavBarWrapper.Item>
+      <NavBarWrapper.Item><NavLink to="/editores">editores</NavLink></NavBarWrapper.Item>
+      <NavBarWrapper.Item><NavLink to="/post/criar">novo post</NavLink></NavBarWrapper.Item>
+    </NavBarWrapper.List>
+  </>
 }

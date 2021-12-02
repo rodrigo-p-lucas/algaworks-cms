@@ -12,5 +12,6 @@ const Template: Story<ProfileProps> = (args) =>
 export const Default = Template.bind({})
 Default.args = {
   name: 'Daniel Bonfacio',
-  description: 'editor ha muito tempo'
+  description: 'editor ha muito tempo',
+  editorId: 1
 }
